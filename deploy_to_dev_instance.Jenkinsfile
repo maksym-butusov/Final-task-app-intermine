@@ -7,7 +7,7 @@ node{
   }
 
     stage('Sleep-waiting APP') {
-    sh "sleep 27m"
+    sh "sleep 15m"
 }
 
   stage('Check Availability APP page') {
