@@ -5,7 +5,6 @@ node{
     registryCredential = 'dockerhub'
 }
     
-    /*def buildInfo*/
   
     /*stage('Remove all containers and images'){
         sh "docker stop \$(docker ps -a -q)"
