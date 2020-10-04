@@ -27,8 +27,8 @@ node{
           }
      }
 
-stage('docker-compose down') {
-    sh "ssh -o StrictHostKeyChecking=no -l inception 35.228.161.55 && docker-compose -f dockerhub.docker-compose.yml down"
+   sshagent (credentials: ['stage']) {
+    sh 'ssh -o StrictHostKeyChecking=no -l inception 35.228.161.55 "cd docker-intermine-gradle && docker-compose -f dockerhub.docker-compose.yml down && docker container prune -f && docker image prune -a -f"'
 }
 
 }
