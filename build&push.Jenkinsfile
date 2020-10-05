@@ -5,13 +5,6 @@ node{
     registryCredential = 'dockerhub'
 }
     
-  
-    /*stage('Remove all containers and images'){
-        sh "docker stop \$(docker ps -a -q)"
-        sh "docker container prune -f"
-        sh "docker image prune -a -f"
-    }*/
-
     stage ('Clone Repository'){
         git url: 'https://github.com/maksym-butusov/Final-task-app-intermine' ,credentialsId: 'jenkins_credentials'
     }
