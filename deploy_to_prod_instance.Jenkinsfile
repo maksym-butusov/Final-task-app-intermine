@@ -4,7 +4,7 @@ node {
         script {
             // Define Variable
              def USER_INPUT = input(
-                    message: 'Please approve deployment and choose which deployment you need to do?',
+                    message: 'Please, approve deployment and choose which deployment you need to do?',
                     parameters: [
                             [$class: 'ChoiceParameterDefinition',
                              choices: ['Deploy containers for the first time','Update existing containers'].join('\n'),
