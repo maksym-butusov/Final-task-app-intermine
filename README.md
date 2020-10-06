@@ -1,5 +1,9 @@
 ### Jekins pipelines for repo: https://github.com/maksym-butusov/docker-intermine-gradle
 
+## Schema of the project:
+
+![](img/environment.png  )
+
 ### Tasks
 1. Repository - https://github.com/intermine/intermine
 2. Create 2 environments - dev and prod using terraform on any virtual platform (public cloud or local);
