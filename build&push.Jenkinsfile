@@ -4,7 +4,6 @@ node{
     registry = "incepti0n/intermine_tomcat"
     registryCredential = 'dockerhub'
 }
-    
     stage ('Clone Repository'){
         git url: 'https://github.com/maksym-butusov/Final-task-app-intermine' ,credentialsId: 'jenkins_credentials'
     }
