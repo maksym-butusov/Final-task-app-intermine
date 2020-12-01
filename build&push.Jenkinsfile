@@ -1,5 +1,4 @@
-node{
-    
+node{    
     environment {
     registry = "incepti0n/intermine_tomcat"
     registryCredential = 'dockerhub'
